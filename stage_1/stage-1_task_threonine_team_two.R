@@ -1,5 +1,12 @@
-
-
+#FUNCTIONS GALORE
+# HackBio Internship Program - February, 2025
+# stage-1 task for threonine_team 2
+# The group consists of five persons, namely;
+# Peter (https://github.com/imontepez)
+# Tyler (https://github.com/tylermaire)
+# Terry (https://github.com/Terryida)
+# Gracious (https://github.com/Graciousisoah)
+# Mahpara (https://github.com/mahpara97)
 
 # Function 1: Translation of DNA to protein
 
@@ -190,3 +197,15 @@ Hamming_distance <- function(Slackname, Twittername) {
 
 # Test the function by comparing the Hamming distances between the Slack and Twitter usernames of all team members
 Hamming_distance("perexzzzz", "imontepez")
+
+#Terry_ngala, Tyler
+#Perex, imontepez
+#Gracious, Gracious_1
+#Mahpara, Mahpara_twitter
+#ngala_terry, Ty_Maire
+#github of all members of group    
+#https://github.com/mahpara97 
+#https://github.com/Terryida
+#https://github.com/imontepez 
+#https://github.com/tylermaire 
+#https://github.com/Graciousisoah
