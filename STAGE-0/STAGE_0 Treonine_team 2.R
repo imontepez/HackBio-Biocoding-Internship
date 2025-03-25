@@ -1,4 +1,5 @@
 details <- list(
+  
   first_name = c("Tyler", "Mahpara", "Peter", "Gracious", "Terry"),
   last_name = c("Maire", "Abid", "Imonte", "Isoah", "Ngala"),
   slack_username = c("Tyler", "Mahpara", "Perex", "Gracious", "Terry"),
@@ -7,9 +8,13 @@ details <- list(
   country = c("United States", "Pakistan", "Nigeria", "Nigeria", "Kenya"),
   discipline = c("Bioinformatics", "Biotechnology", "Biomedical Technology", "Microbiology", "Biochemistry"),
   programming_language = c("R", "R", "R", "R", "R")
+  
 )
+
 #insert the list above into a data frame then print
+
 Interns_data <- data.frame(
+  
   FirstName = details$first_name,
   LastName = details$last_name,
   Slack_UserName = details$slack_username,
@@ -18,8 +23,14 @@ Interns_data <- data.frame(
   Country = details$country,
   Discipline = details$discipline,
   Programming_Language = details$programming_language
+  
 )
+
+
 print(Interns_data)
 # Group Github Usernames
-#https://github.com/mahpara97, https://github.com/Terryida
-#https://github.com/imontepez , https://github.com/tylermaire , https://github.com/Graciousisoah
+#https://github.com/mahpara97
+#https://github.com/Terryida
+#https://github.com/imontepez 
+#https://github.com/tylermaire 
+#https://github.com/Graciousisoah
