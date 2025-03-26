@@ -14,14 +14,14 @@ To achieve this, the function first splits the DNA sequence into a vector of cod
 FUNCTION 2: Generation and Simulation of a Logistic Growth Curve
 Logistic growth is a mathematical model that describes how populations grow in a constrained environment, characterized by an initial exponential growth phase followed by a slowdown as resources become limited. This model is applicable across various fields, including biology, military logistics, and mathematics, highlighting its versatility and significance. The logistic growth model is often represented by the differential equation  where  $dt/dP=rP(1−K/P)$  where P is the population size, r is the growthrate, and K is the carrying capacity. The logistic growth is characterized by S-shaped curve that starts with a slow growth phase, accelerates during the exponential phase, and eventually levels off as it approaches the carrying capacity of the environment. Another characteristics is the Carrying Capacity, maximum population size that the environment can sustain, beyond which growth slows significantly.
 
-$$N(t)=\frac{K}{(1+\frac{(k-N0}{N0})e^{-rt})}$$
+$$P(t)=\frac{K}{(1+\frac{(k-N0}{N0})e^{-rt})}$$
 - where:
-- N(t): Population size (or quantity) at time ( t ).
+- P(t): Population size/quantity/concentration/0D at time ( t ).
 - K: Carrying capacity, the maximum sustainable population size.
--N0: Initial population size at t=0t = 0t = 0
- -r: Intrinsic growth rate, the rate at which the population grows when resources are abundant.
- -t: Time.
- -e: The base of the natural logarithm (approximately 2.718).
+- N0: Initial population size at t=0
+ - r: Intrinsic growth rate, the rate at which the population grows when resources are abundant.
+ - t: Time.
+ - e: The base of the natural logarithm (approximately 2.718).
 
 
 
