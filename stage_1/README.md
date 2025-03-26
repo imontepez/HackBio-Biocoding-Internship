@@ -1,8 +1,8 @@
-# **HackBio biocoding internship stage_1 task: FUNCTION GALORE!**
+# **HackBio biocoding internship stage_1 task: ***FUNCTION GALORE!*** **
 
 This stage task involves writing four different functions in R for specific purposes. 
 
-## **INSTRUCTIONS:**   
+## ***INSTRUCTIONS:***   
 
 - Write a function for translating DNA to protein
 - Write a function that simulates and generates a logistic population growth curve. Your function should include 2 extra parameters that randomize the length of the lag-phase and the exponential phase.  Most living populations follow a logistic population growth. Therefore, your growth curve can be: Population Size vs Time, Cell density vs Time, OD vs Time, CFU vs Time, etc.
