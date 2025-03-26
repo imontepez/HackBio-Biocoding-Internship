@@ -2,7 +2,7 @@
 
 This stage task involves writing four different functions in R for specific purposes. 
 
-## ***INSTRUCTIONS:***   
+***INSTRUCTIONS:***   
 
 - Write a function for translating DNA to protein
 - Write a function that simulates and generates a logistic population growth curve. Your function should include 2 extra parameters that randomize the length of the lag-phase and the exponential phase.  Most living populations follow a logistic population growth. Therefore, your growth curve can be: Population Size vs Time, Cell density vs Time, OD vs Time, CFU vs Time, etc.
@@ -10,13 +10,12 @@ This stage task involves writing four different functions in R for specific purp
 - Write a function for determining the time to reach 80% of the maximum growth; usually the carrying capacity.
 - Finally, write a function for calculating the hamming distance between your Slack username and twitter/X handle (synthesize if you don’t have one). Feel free to pad it with extra words if they are not of the same length.  
 ---
-
-### **FUNCTION 1: Translation of DNA to Protein**
+## **FUNCTION 1: Translation of DNA to Protein**
 The dna_to_protein function takes a single argument, ***sequence***, a string of DNA nucleotides, and translates it into a protein sequence represented as a string of amino acid symbols. It uses a dataframe to map codons —3-nucleotide sequences to their corresponding amino acids, combining these into two columns for efficient lookup. The function mimics biological translation, where DNA is transcribed to mRNA (assumed as the input here) and translated into proteins, beginning with the start codon "ATG" (Methionine) and ending at stop codons "TAA", "TAG", or "TGA" (represented as "*"). The process involves splitting the input DNA sequence into triplets, matching each codon to its amino acid, and building the protein sequence incrementally.
 To achieve this, the function first splits the DNA sequence into a vector of codons by extracting substrings of three characters. It then iterates through these codons, using the dataframe to identify the corresponding amino acid for each and appending it to the growing protein sequence. If a stop codon ("*") is encountered, translation halts, and the function returns the completed amino acid sequence. Otherwise, it processes all codons and returns the final sequence as the output. This structured approach ensures accurate translation while reflecting the biological rules of protein synthesis, making it a useful tool for bioinformatics applications.
 
 ---
-#### **FUNCTION 2: Generation and Simulation of a Logistic Growth Curve**
+### **FUNCTION 2: Generation and Simulation of a Logistic Growth Curve**
 Logistic growth is a mathematical model that describes how populations grow in a constrained environment, characterized by an initial exponential growth phase followed by a slowdown as resources become limited. This model is applicable across various fields, including biology, military logistics, and mathematics, highlighting its versatility and significance. The logistic growth model is often represented by the differential equation:
 
 $$\frac{dt}{dP}=rP*(\frac{1−K}{P})$$ 
@@ -48,7 +47,7 @@ $$P(t)=\frac{1}{1+\frac{1-N0}{N0}*e^{-rt}}$$
 
 ---
 
-##### **FUNCTION 3: Function for determining the time to reach 80% of the maximum growth -based on function_2**
+#### **FUNCTION 3: Function for determining the time to reach 80% of the maximum growth -based on function_2**
 
 Based on the previous function, we defined another function to calcalulate the time to reach 80% of the carrying capacity(K=1), hence the logistic equation becomes:
 
@@ -67,7 +66,7 @@ Its can be deduced that function_2 and 3 were used to perform three main tasks:
 3. carrying_capacity_80 Function: Attempts to calculate the time to reach 80% of the carrying capacity (0.8), but contains an error in its use of final_od. It’s meant to analyze growth dynamics.
 ---
 
-###### **FUNCTION 4: write a function for calculating the hamming distance between your Slack username and twitter/X handle**
+##### **FUNCTION 4: write a function for calculating the hamming distance between your Slack username and twitter/X handle**
 
 Hamming distance is a metric used to quantify the difference between two strings of equal length by counting the number of positions at which the corresponding symbols differ.  It measures the number of positions at which two strings of equal length differ, providing a straightforward way to assess similarity or dissimilarity. This metric is not only foundational for various computational applications but also serves as a basis for more complex similarity measures. It is widely used in error detection and correction codes, where it helps identify and correct errors in transmitted data. 
 
