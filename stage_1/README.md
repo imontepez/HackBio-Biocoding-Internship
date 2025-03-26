@@ -67,7 +67,7 @@ Its can be deduced that function_2 and 3 were used to perform three main tasks:
 3. carrying_capacity_80 Function: Attempts to calculate the time to reach 80% of the carrying capacity (0.8), but contains an error in its use of final_od. It’s meant to analyze growth dynamics.
 
 
-######  **FUNCTION 4: write a function for calculating the hamming distance between your Slack username and twitter/X handle**
+###### **FUNCTION 4: write a function for calculating the hamming distance between your Slack username and twitter/X handle**
 
 Hamming distance is a metric used to quantify the difference between two strings of equal length by counting the number of positions at which the corresponding symbols differ.  It measures the number of positions at which two strings of equal length differ, providing a straightforward way to assess similarity or dissimilarity. This metric is not only foundational for various computational applications but also serves as a basis for more complex similarity measures. It is widely used in error detection and correction codes, where it helps identify and correct errors in transmitted data. 
 
