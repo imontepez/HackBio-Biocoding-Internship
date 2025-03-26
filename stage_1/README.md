@@ -1,4 +1,4 @@
-# **HackBio biocoding internship stage_1 task: ***FUNCTION GALORE!*** **
+# **HackBio biocoding internship stage_1 task:** ***FUNCTION GALORE!***
 
 This stage task involves writing four different functions in R for specific purposes. 
 
