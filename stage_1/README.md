@@ -34,5 +34,23 @@ $$P(t)=\frac{1}{1+\frac{1-N0}{N0}*e^{-rt}}$$
 
 - After running the function, a plot is set up. To simulate changes in the concentrations for 100 times, a for loop with random initial concentration values and random growth rates is created. Next, these random values are given as inputs for the logistic growth curve function, along with the defined time range. The function is run for 100 times within the loop, while lines for each output are generated with randomly selected colors from the RGB scale.
 
+##### **FUNCTION 3: Function for determining the time to reach 80% of the maximum growth -based on function_2**
 
- 
+
+Based on the previous function, we defined another function to calcalulate the time to reach 80% of the carrying capacity(K=1), hence the logistic equation becomes:
+$$P(0.8)=\frac{1}{1+\frac{1-P0}{P0}*e^{-rt}}$$
+
+To do so, we utilize the growth rate, initial concentration and final concentration as parameters within the function. We insert them in a formula described within the function and return a print statement. we insert them into the function which returns a print statement and the value of the time to reach 80% of K from the formular below:
+
+time_for_capacity = $log((0.8 / (1 - 0.8)) / (init_od / (1 - init_od))) / growth_rate$
+
+Its can be deduced that function_2 and 3 were used to perform three main tasks:
+
+1. logistic_growth Function: Models logistic population growth with a carrying capacity of 1, given an initial population (n), growth rate (r), and time points (time). It’s used to simulate growth curves.
+
+2. Simulation and Plotting: Generates and plots 100 logistic growth curves with random initial populations and growth rates, overlaid on a single plot with random colors, to visualize variability.
+
+3. carrying_capacity_80 Function: Attempts to calculate the time to reach 80% of the carrying capacity (0.8), but contains an error in its use of final_od. It’s meant to analyze growth dynamics.
+
+
+FUNCTION 4: write a function for calculating the hamming distance between your Slack username and twitter/X handle
