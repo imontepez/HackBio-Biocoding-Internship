@@ -1,15 +1,15 @@
-**# HackBio biocoding internship stage_1 task: FUNCTION GALORE!**
+# **HackBio biocoding internship stage_1 task: FUNCTION GALORE!**
 
 This stage task involves writing four different functions in R for specific purposes. 
 
 
 ## **INSTRUCTIONS:**   
 
-Write a function for translating DNA to protein
-Write a function that simulates and generates a logistic population growth curve. Your function should include 2 extra parameters that randomize the length of the lag phase and the exponential phase.  Most living populations follow a logistic population growth. Therefore, your growth curve can be: Population Size vs Time, Cell density vs Time, OD vs Time, CFU vs Time, etc.
-Using your function, generate a dataframe with 100 different growth curves.
-Write a function for determining the time to reach 80% of the maximum growth; usually the carrying capacity.
-Finally, write a function for calculating the hamming distance between your Slack username and twitter/X handle (synthesize if you don’t have one). Feel free to pad it with extra words if they are not of the same length.
+- Write a function for translating DNA to protein
+- Write a function that simulates and generates a logistic population growth curve. Your function should include 2 extra parameters that randomize the length of the lag-phase and the exponential phase.  Most living populations follow a logistic population growth. Therefore, your growth curve can be: Population Size vs Time, Cell density vs Time, OD vs Time, CFU vs Time, etc.
+- Using your function, generate a dataframe with 100 different growth curves.
+- Write a function for determining the time to reach 80% of the maximum growth; usually the carrying capacity.
+- Finally, write a function for calculating the hamming distance between your Slack username and twitter/X handle (synthesize if you don’t have one). Feel free to pad it with extra words if they are not of the same length.
 
 ### **FUNCTION 1: Translation of DNA to Protein**
 The dna_to_protein function takes a single argument, sequence, a string of DNA nucleotides, and translates it into a protein sequence represented as a string of amino acid symbols. It uses a dataframe to map codons—3-nucleotide sequences—to their corresponding amino acids, combining these into two columns for efficient lookup. The function mimics biological translation, where DNA is transcribed to mRNA (assumed as the input here) and translated into proteins, beginning with the start codon "ATG" (Methionine) and ending at stop codons "TAA", "TAG", or "TGA" (represented as "*"). The process involves splitting the input DNA sequence into triplets, matching each codon to its amino acid, and building the protein sequence incrementally.
