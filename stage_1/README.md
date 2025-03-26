@@ -1,1 +1,19 @@
-FUNCTION GALORE
+HackBio biocoding internship stage_1 task: FUNCTION GALORE!
+This stage task involves writing four different functions in R for specific purposes. 
+INSTRUCTIONS:
+Write a function for translating DNA to protein
+Write a function that simulates and generates a logistic population growth curve. Your function should include 2 extra parameters that randomize the length of the lag phase and the exponential phase.  Most living populations follow a logistic population growth. Therefore, your growth curve can be: Population Size vs Time, Cell density vs Time, OD vs Time, CFU vs Time, etc.
+Using your function, generate a dataframe with 100 different growth curves.
+Write a function for determining the time to reach 80% of the maximum growth; usually the carrying capacity.
+Finally, write a function for calculating the hamming distance between your Slack username and twitter/X handle (synthesize if you don’t have one). Feel free to pad it with extra words if they are not of the same length.
+
+FUNCTION 1: Translation of DNA to Protein
+The dna_to_protein function takes a single argument, sequence, a string of DNA nucleotides, and translates it into a protein sequence represented as a string of amino acid symbols. It uses a dataframe to map codons—3-nucleotide sequences—to their corresponding amino acids, combining these into two columns for efficient lookup. The function mimics biological translation, where DNA is transcribed to mRNA (assumed as the input here) and translated into proteins, beginning with the start codon "ATG" (Methionine) and ending at stop codons "TAA", "TAG", or "TGA" (represented as "*"). The process involves splitting the input DNA sequence into triplets, matching each codon to its amino acid, and building the protein sequence incrementally.
+To achieve this, the function first splits the DNA sequence into a vector of codons by extracting substrings of three characters. It then iterates through these codons, using the dataframe to identify the corresponding amino acid for each and appending it to the growing protein sequence. If a stop codon ("*") is encountered, translation halts, and the function returns the completed amino acid sequence. Otherwise, it processes all codons and returns the final sequence as the output. This structured approach ensures accurate translation while reflecting the biological rules of protein synthesis, making it a useful tool for bioinformatics applications.
+
+FUNCTION 2: Generation and Simulation of a Logistic Growth Curve
+Logistic growth is a mathematical model that describes how populations grow in a constrained environment, characterized by an initial exponential growth phase followed by a slowdown as resources become limited. This model is applicable across various fields, including biology, military logistics, and mathematics, highlighting its versatility and significance. The logistic growth model is often represented by the differential equation  where $$  dt/dP=rP(1−K/P)$$ where P is the population size, r is the growthrate, and K is the carrying capacity.
+
+
+
+ 
