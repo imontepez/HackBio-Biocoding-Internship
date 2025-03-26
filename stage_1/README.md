@@ -24,7 +24,7 @@ $$P(t)=\frac{K}{1+\frac{k-N0}{N0}*e^{-rt}}$$
  - e: The base of the natural logarithm (approximately 2.718).
 This equation generates the S-shaped curve, reflecting three distinct phases: a slow initial increase (lag phase), rapid exponential growth (log phase), and a leveling off as the population approaches ( K ) (stationary phase).
 
-- The function we constructed takes three parameters for the initial population size (n for P_{0}), growth rate (r for r) and time. It assumes the maximum carrying capacity K to be 1, therefore the expression above changes as:
+- The function we constructed takes three parameters for the initial population size (n for P_{t} ), growth rate (r for r) and time. It assumes the maximum carrying capacity K to be 1, therefore the expression above changes as:
 
 $$P(t)=\frac{1}{1+\frac{1-N0}{N0}*e^{-rt}}$$
 
