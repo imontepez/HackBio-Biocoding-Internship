@@ -22,9 +22,13 @@ $$P(t)=\frac{K}{1+\frac{k-N0}{N0}*e^{-rt}}$$
  - r: Intrinsic growth rate, the rate at which the population grows when resources are abundant.
  - t: Time.
  - e: The base of the natural logarithm (approximately 2.718).
+This equation generates the S-shaped curve, reflecting three distinct phases: a slow initial increase (lag phase), rapid exponential growth (log phase), and a leveling off as the population approaches ( K ) (stationary phase).
 
+- The function we constructed takes three parameters for the initial population size (n for P_0), growth rate (r for r) and time. It assumes the maximum carrying capacity K to be 1, therefore the expression above changes as:
 
+$$P(t)=\frac{1}{1+\frac{1-N0}{N0}*e^{-rt}}$$
 
+- After running the function, a plot is set up. To simulate changes in the concentrations for 100 times, a for loop with random initial concentration values and random growth rates is created. Next, these random values are given as inputs for the logistic growth curve function, along with the defined time range. The function is run for 100 times within the loop, while lines for each output are generated with randomly selected colors from the RGB scale.
 
 
  
