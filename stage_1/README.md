@@ -28,7 +28,7 @@ $$P(t)=\frac{K}{1+\frac{k-N0}{N0}*e^{-rt}}$$
  - e: The base of the natural logarithm (approximately 2.718).
 This equation generates the S-shaped curve, reflecting three distinct phases: a slow initial increase (lag phase), rapid exponential growth (log phase), and a leveling off as the population approaches ( K ) (stationary phase).
 
-- The function we constructed takes three parameters for the initial population size (n for P~t), growth rate (r for r) and time. It assumes the maximum carrying capacity K to be 1, therefore the expression above changes as:
+- The function we constructed takes three parameters for the initial population size (n for P~t~), growth rate (r for r) and time. It assumes the maximum carrying capacity K to be 1, therefore the expression above changes as:
 
 $$P(t)=\frac{1}{1+\frac{1-N0}{N0}*e^{-rt}}$$
 
@@ -38,7 +38,7 @@ $$P(t)=\frac{1}{1+\frac{1-N0}{N0}*e^{-rt}}$$
 
 
 Based on the previous function, we defined another function to calcalulate the time to reach 80% of the carrying capacity(K=1), hence the logistic equation becomes:
-$$P~(0.8)=\frac{1}{1+\frac{1-P~0}{P~0}*e^{-rt}}$$
+$$P(0.8)=\frac{1}{1+\frac{1-P0}{P0}*e^{-rt}}$$
 
 To do so, we utilize the growth rate, initial concentration and final concentration as parameters within the function. We insert them in a formula described within the function and return a print statement. we insert them into the function which returns a print statement and the value of the time to reach 80% of K from the formular below:
 
