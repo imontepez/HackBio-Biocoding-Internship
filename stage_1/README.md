@@ -37,25 +37,24 @@ $$P(t)=\frac{K}{1+\frac{k-N0}{N0}*e^{-rt}}$$
  - r: Intrinsic growth rate, the rate at which the population grows when resources are abundant.
  - t: Time.
  - e: The base of the natural logarithm (approximately 2.718).
-This equation generates the S-shaped curve, reflecting three distinct phases: a slow initial increase (lag phase), rapid exponential growth (log phase), and a leveling off as the population approaches ( K ) (stationary phase).
-
-- The function we constructed takes three parameters for the initial population size (n for P~t~), growth rate (r for r) and time. It assumes the maximum carrying capacity K to be 1, therefore the expression above changes as:
+   
+This equation generates the S-shaped curve, reflecting three distinct phases: a slow initial increase (lag phase), rapid exponential growth (log phase), and a leveling off as the population approaches ( K ) (stationary phase). The function we constructed takes three parameters for the initial population size (n for P~t~), growth rate (r for r) and time. It assumes the maximum carrying capacity K to be 1, therefore the expression above changes as:
 
 
 $$P(t)=\frac{1}{1+\frac{1-N0}{N0}*e^{-rt}}$$
 
 
 - After running the function, a plot is set up. To simulate changes in the concentrations for 100 times, a for loop with random initial concentration values and random growth rates is created. Next, these random values are given as inputs for the logistic growth curve function, along with the defined time range. The function is run for 100 times within the loop, while lines for each output are generated with randomly selected colors from the RGB scale.
+
+![plot of concentration vs time](<img width="959" alt="image" src="https://github.com/user-attachments/assets/3be6f0ac-7f7f-4156-92e2-f4db839251c0" />
+)
 ---
 
 ##### **FUNCTION 3: Function for determining the time to reach 80% of the maximum growth -based on function_2**
 
-
 Based on the previous function, we defined another function to calcalulate the time to reach 80% of the carrying capacity(K=1), hence the logistic equation becomes:
 
-
 $$P(0.8)=\frac{1}{1+\frac{1-P0}{P0}*e^{-rt}}$$
-
 
 To do so, we utilize the growth rate, initial concentration and final concentration as parameters within the function. We insert them in a formula described within the function and return a print statement. we insert them into the function which returns a print statement and the value of the time to reach 80% of K from the formular below:
 
@@ -76,6 +75,7 @@ Hamming distance is a metric used to quantify the difference between two strings
 
 The function for calculating the hamming distance were optimized to enhance readiability and performance. The function takes a Slack username and Twitter/X username as it;s arguments. It validates the two parameters to ensure they are both character strings and non-empty strings. It then split the usernames into character vectors and check if they are equal length before calculating for the hamming distance using vectorized comparison -the function compares each character within these vectors based on their positions. If a character within the first username/vector is different from that within the second username/vector, the Hamming distance is increased by 1. Finally, it returns a statement with the numeric Hamming distance between the two strings. to read more about Hamming distance used the link [Hamming distance](https://en.wikipedia.org/wiki/Hamming_distance) [research paper/pdf](https://scispace.com/papers/measures-of-string-similarities-based-on-the-hamming-sw2upqnw9iyr)
 
+---
 
 
 
