@@ -65,6 +65,7 @@ Its can be deduced that function_2 and 3 were used to perform three main tasks:
 2. Simulation and Plotting: Generates and plots 100 logistic growth curves with random initial populations and growth rates, overlaid on a single plot with random colors, to visualize variability.
 
 3. carrying_capacity_80 Function: Attempts to calculate the time to reach 80% of the carrying capacity (0.8), but contains an error in its use of final_od. It’s meant to analyze growth dynamics.
+---
 
 ###### **FUNCTION 4: write a function for calculating the hamming distance between your Slack username and twitter/X handle**
 
