@@ -19,7 +19,8 @@ To achieve this, the function first splits the DNA sequence into a vector of cod
 #### **FUNCTION 2: Generation and Simulation of a Logistic Growth Curve**
 Logistic growth is a mathematical model that describes how populations grow in a constrained environment, characterized by an initial exponential growth phase followed by a slowdown as resources become limited. This model is applicable across various fields, including biology, military logistics, and mathematics, highlighting its versatility and significance. The logistic growth model is often represented by the differential equation:
 
-$$\frac{dt}{dP}=rP*(\frac{1−K}{P})$ $ 
+$$\frac{dt}{dP}=rP*(\frac{1−K}{P})$$ 
+
 where 
 - P is the population size,
 - r is the growthrate, and
