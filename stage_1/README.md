@@ -46,8 +46,6 @@ $$P(t)=\frac{1}{1+\frac{1-N0}{N0}*e^{-rt}}$$
 
 - After running the function, a plot is set up. To simulate changes in the concentrations for 100 times, a for loop with random initial concentration values and random growth rates is created. Next, these random values are given as inputs for the logistic growth curve function, along with the defined time range. The function is run for 100 times within the loop, while lines for each output are generated with randomly selected colors from the RGB scale.
 
-![plot of concentration vs time](<img width="959" alt="image" src="https://github.com/user-attachments/assets/3be6f0ac-7f7f-4156-92e2-f4db839251c0" />
-)
 ---
 
 ##### **FUNCTION 3: Function for determining the time to reach 80% of the maximum growth -based on function_2**
