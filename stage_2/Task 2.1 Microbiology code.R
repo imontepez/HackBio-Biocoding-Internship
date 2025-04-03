@@ -1,3 +1,13 @@
+#githublink: https://github.com/imontepez/HackBio-Biocoding-Internship/tree/main/stage_2
+
+#Threonine team_2:
+#Terry_ngala: https://github.com/Terryida
+#Tyler: https://github.com/tylermaire
+#Perex: https://github.com/imontepez
+#Gracious: https://github.com/Graciousisoah
+#Mahpara: https://github.com/mahpara97
+#link to the video: 
+
 # Task Code 2.1: Microbiology
 
 # Part I : Growth Curve of the Knock-Out vs Knock-in Strains
@@ -372,4 +382,9 @@ text(1.5, y_max - 0.05 * (y_max - y_min), # places the text near the top of the 
                     ", p =", format.pval(t_test_result$p.value, digits = 3)), 
                         cex = 0.9)
 
+#Observation:
+#From the t-test, there is no significance difference as p-value( 0.9209227) > 0.05
+#there is no statistical difference between the time it takes for the wild-type and knock-out strains,
+# and also  indicate that theres's no systematic difference in growth behavior due to the knock-out. 
 
+                     
