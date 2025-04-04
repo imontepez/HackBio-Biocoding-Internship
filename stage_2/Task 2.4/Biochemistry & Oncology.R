@@ -6,15 +6,15 @@
 library(dplyr)
 #Import both sift and foldx datasets;
 
-sift_dataset = 'https://raw.githubusercontent.com/HackBio-Internship/public_datasets/main/R/datasets/sift.tsv'
+sift_dataset <- 'https://raw.githubusercontent.com/HackBio-Internship/public_datasets/main/R/datasets/sift.tsv'
 
-sift_dataset1 = read.table(sift_dataset,header = TRUE)
+sift_dataset1 <- read.table(sift_dataset,header = TRUE)
 
 #head(sift_dataset1)
 
-foldx_dataset = 'https://raw.githubusercontent.com/HackBio-Internship/public_datasets/main/R/datasets/foldX.tsv'
+foldx_dataset <- 'https://raw.githubusercontent.com/HackBio-Internship/public_datasets/main/R/datasets/foldX.tsv'
 
-foldx_dataset1 = read.table(foldx_dataset,header = TRUE)
+foldx_dataset1 <- read.table(foldx_dataset,header = TRUE)
 
 head(foldx_dataset1)
 
