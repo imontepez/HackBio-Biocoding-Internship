@@ -17,15 +17,15 @@ _Instructions_ ⬇️
 
 The code is divided into three parts; plotting growth curves, calculating time to reach carrying capacity and generating statistical plots. The code is about analyzing growth curves of different bacteria strains, specifically wide-type and knock-out type , and comparing their growth characteristics. 
 
-## PART I:
+## PART I: Plotting Growth Curves for the Different Strains and Replicaes
 first we loaded the data using the function "read.csv()" with header and tab separated, then extracted the time points from the given data. we extracted the columns for the different strains and replicates then put them into a list and named the elements inside the list. we used "names()" to assign meaningful manes to each elements in strian_data making it easier to reference them later. Next we created a dataframe "strand_df" with a single column "Time" which contains the timepoints, then add the mean of the technical replicates across each rows to the dataframe. we set the plotting environment to adjust the size to make them larger for legibility. we plotted the growth curves for each strain and replicates, WT in red and Knock-out in blue with different line types to distinguish them. 
 
 ---
 
-### PART II: Dettermining the time to reach 80% of the carrying capacity 
+### PART II: Dettermining the Time to reach 80% of the Carrying Capacity 
 we created a function that retuens the time it takes to reach 80% of the maximum OD which is the carrying capacity. the function is then applied to each strain by loop to calculate the time to reach 80% of the carrying capacity for each strain and print the result. 
 
 ---
 
-#### PART III: Generating a scatter plot and a boxplot
+#### PART III: Generating a Scatter Plot and a Boxplot
 this section compares WT and KO carrying capacities statistically. A dataframe of "capacity-df" with strain and OD-capacity was created, then subsetted the capacities for WT and KO to perform a t-testanalysis comparing the means of WT and KO. the group means were extracted and used for plotting scatter plot and box plot.
