@@ -3,8 +3,8 @@ This stage involves data manipulation, statistical analysis and data visualizati
 
 TASK 2.1: Microbiology
 Instructions:
-- Look at this [dataset here] (https://raw.githubusercontent.com/HackBio-Internship/2025_project_collection/refs/heads/main/Python/Dataset/mcgc.tsv).
-- This is the [description of the dataset] (https://github.com/HackBio-Internship/2025_project_collection/blob/main/Python/Dataset/mcgc_METADATA.txt) . open in a new tab, not a file to be downloaded
+- Look at this [dataset here](https://raw.githubusercontent.com/HackBio-Internship/2025_project_collection/refs/heads/main/Python/Dataset/mcgc.tsv).
+- This is the [description of the dataset](https://github.com/HackBio-Internship/2025_project_collection/blob/main/Python/Dataset/mcgc_METADATA.txt) . open in a new tab, not a file to be downloaded
 - Plot all the growth curves of OD600 vs Time for the different Strains with the following instructions
 - For each strain, plot a growth curve of the the knock out (-) an knock in (+) strain overlaid on top of each other
 - Using your function from last stage, determine the time to reach the carrying capacity for each strain/mutant
