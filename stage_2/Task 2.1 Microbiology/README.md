@@ -1,4 +1,4 @@
-STAGE 2: STATISTICAL ANALYSIS AND DATA VISUALIZATION
+# **STAGE 2: STATISTICAL ANALYSIS AND DATA VISUALIZATION**
 This stage involves data manipulation, statistical analysis and data visualization to derive insight from the various data provided. The stage has different task code ranging from 2.1 to 2.7 based on different academic disciplines. 
 
 TASK 2.1: Microbiology
