@@ -97,25 +97,25 @@ The data is used to determine the prevalence of diseases and risk factors, estab
 [Data Dictionary](https://raw.githubusercontent.com/HackBio-Internship/public_datasets/main/R/nhanes.csv)
 
 ***Tasks:***
-Process all NA (either by deleting or by converting to zero) {Hard :fire:}
+- Process all NA (either by deleting or by converting to zero) {Hard :fire:}
 
-Visualize the distribution of BMI, Weight, Weight in pounds (weight *2.2) and Age with an histogram.
+- Visualize the distribution of BMI, Weight, Weight in pounds (weight *2.2) and Age with an histogram.
 
-What’s the mean 60-second pulse rate for all participants in the data?
+- What’s the mean 60-second pulse rate for all participants in the data?
 73.63382
 
-What’s the range of values for diastolic blood pressure in all participants? (Hint: see help for min(), max()).
+- What’s the range of values for diastolic blood pressure in all participants? (Hint: see help for min(), max()).
 0-116
 
-What’s the variance and standard deviation for income among all participants?
-Visualize the relationship between weight and height ?
+- What’s the variance and standard deviation for income among all participants?
+- Visualize the relationship between weight and height ?
 
-Color the points by
+- Color the points by
 gender,
-diabetes,
+diabetes and by
 smoking status
 
-Conduct t-test between the following variables and make conclusions on the relationship between them based on P-Value
+- Conduct t-test between the following variables and make conclusions on the relationship between them based on P-Value
 Age and Gender,
-BMI and Diabetes,
+BMI and Diabetes and 
 Alcohol Year and Relationship Status
