@@ -29,3 +29,30 @@ we created a function that retuens the time it takes to reach 80% of the maximum
 
 #### PART III: Generating a Scatter Plot and a Boxplot
 this section compares WT and KO carrying capacities statistically. A dataframe of "capacity-df" with strain and OD-capacity was created, then subsetted the capacities for WT and KO to perform a t-testanalysis comparing the means of WT and KO. the group means were extracted and used for plotting scatter plot and box plot.
+
+---
+
+##### TASK 2.4: Biochemistry & Oncology
+
+***INSTRUCTIONS***
+
+Proteins structures are known to be strongly connected to their functions. However, at the amino acid level, not all amino acids contribute to structure and function equally. [Galardini and colleagues](https://elifesciences.org/articles/31035#abstract) decided to investigate the impact of all possible individual, non synonymous nonsense mutations on the structure and function of protein.
+The functional impact was computed as SIFT scores and the structural impact was calculated as FoldX Score (in kCal/mol).
+Dataset Here:
+- [SIFT Dataset](https://raw.githubusercontent.com/HackBio-Internship/public_datasets/main/R/datasets/sift.tsv)
+- [FoldX Dataset](https://raw.githubusercontent.com/HackBio-Internship/public_datasets/main/R/datasets/foldX.tsv)
+
+***Task***
+- Import both sift and foldx datasets; in both datasets, create a column specific_Protein_aa which will be a cantenation of the Protein and Amino_acid columns such that If you have Protein A5A607 and Amino_acid E63D, you have specific_Protein_aa A5A607_E63D
+- Using the specific_Protein_aa column, merge sift and foldx dataset into one final dataframe.
+- According to the authors;
+A SIFT Score below 0.05 is deleterious
+A FoldX score greater than 2 kCal/mol is deleterious
+- Using the criteria above, Find all mutations that have a SIFT score below 0.05 and FoldX Score above 2 (i.e: Mutations that affect both structure and function)
+- Study the [amino acid substitution nomenclature](https://atlasgeneticsoncology.org/teaching/30067/nomenclature-for-the-description-of-mutations-and-other-sequence-variations)
+- Investigate for the amino acid that has the most functional and structural impact
+**Hint:** Using the amino acid column, find a way to select the first amino acid. [Solution here](https://reactgo.com/r-get-first-character-string/)
+Generate a frequency table for all the amino acids
+- Using the amino frequency table above, generate a barplot and pie chart to represent the frequency of the amino acids.
+- Briefly describe the amino acid with the highest impact on protein structure and function
+- What can you say about the structural property and functional property of amino acids with more than 100 occurences.
