@@ -1,3 +1,11 @@
+#Threonine team_2:
+#Terry_ngala: https://github.com/Terryida
+#Tyler: https://github.com/tylermaire
+#Perex: https://github.com/imontepez
+#Gracious: https://github.com/Graciousisoah
+#Mahpara: https://github.com/mahpara97
+
+
 #all the tools are installed and available for use already
 install.packages("caret")
 install.packages("randomForest")
