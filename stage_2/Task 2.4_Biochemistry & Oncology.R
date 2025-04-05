@@ -1,4 +1,12 @@
 ## Hackbio task 2.4 Biochemistry and oncology
+#githublink: https://github.com/imontepez/HackBio-Biocoding-Internship/tree/main/stage_2
+#Threonine team_2:
+#Terry_ngala: https://github.com/Terryida
+#Tyler: https://github.com/tylermaire
+#Perex: https://github.com/imontepez
+#Gracious: https://github.com/Graciousisoah
+#Mahpara: https://github.com/mahpara97
+
 '''
  Proteins structures are known to be strongly connected to their functions. However, at the amino acid level, not all amino acids contribute to structure and function equally. Galardini and colleagues decided to investigate the impact of all possible individual, non synonymous nonsense mutations on the structure and function of protein.
  The functional impact was computed as SIFT scores and the structural impact was calculated as FoldX Score (in kCal/mol).
