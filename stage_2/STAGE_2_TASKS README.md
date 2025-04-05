@@ -36,22 +36,34 @@ this section compares WT and KO carrying capacities statistically. A dataframe o
 
 ***INSTRUCTIONS***
 
-Proteins structures are known to be strongly connected to their functions. However, at the amino acid level, not all amino acids contribute to structure and function equally. [Galardini and colleagues](https://elifesciences.org/articles/31035#abstract) decided to investigate the impact of all possible individual, non synonymous nonsense mutations on the structure and function of protein.
+Proteins structures are known to be strongly connected to their functions. However, at the amino acid level, not all amino acids contribute to structure and function equally. 
+
+[Galardini and colleagues](https://elifesciences.org/articles/31035#abstract) decided to investigate the impact of all possible individual, non synonymous nonsense mutations on the structure and function of protein.
+
 The functional impact was computed as SIFT scores and the structural impact was calculated as FoldX Score (in kCal/mol).
+
 Dataset Here:
+
 - [SIFT Dataset](https://raw.githubusercontent.com/HackBio-Internship/public_datasets/main/R/datasets/sift.tsv)
+
 - [FoldX Dataset](https://raw.githubusercontent.com/HackBio-Internship/public_datasets/main/R/datasets/foldX.tsv)
 
 ***Task***
+
 - Import both sift and foldx datasets; in both datasets, create a column specific_Protein_aa which will be a cantenation of the Protein and Amino_acid columns such that If you have Protein A5A607 and Amino_acid E63D, you have specific_Protein_aa A5A607_E63D
 - Using the specific_Protein_aa column, merge sift and foldx dataset into one final dataframe.
 - According to the authors;
+  
 A SIFT Score below 0.05 is deleterious
+
 A FoldX score greater than 2 kCal/mol is deleterious
+
 - Using the criteria above, Find all mutations that have a SIFT score below 0.05 and FoldX Score above 2 (i.e: Mutations that affect both structure and function)
 - Study the [amino acid substitution nomenclature](https://atlasgeneticsoncology.org/teaching/30067/nomenclature-for-the-description-of-mutations-and-other-sequence-variations)
 - Investigate for the amino acid that has the most functional and structural impact
+- 
 **Hint:** Using the amino acid column, find a way to select the first amino acid. [Solution here](https://reactgo.com/r-get-first-character-string/)
+  
 Generate a frequency table for all the amino acids
 - Using the amino frequency table above, generate a barplot and pie chart to represent the frequency of the amino acids.
 - Briefly describe the amino acid with the highest impact on protein structure and function
@@ -61,7 +73,9 @@ Generate a frequency table for all the amino acids
 
 ***INSTRUCTION***
 
-This is a processed RNAseq dataset involving reading in quantitated gene expression data from an RNA-seq experiment, exploring the data using base R functions and then interpretation. The dataset contains an experiment between a diseased cell line and diseased cell lines treated with compound X. The difference in expression change between the two health status is computed as Fold change to log 2 (Log2FC) and the significance of each is computed in p-value.
+This is a processed RNAseq dataset involving reading in quantitated gene expression data from an RNA-seq experiment, exploring the data using base R functions and then interpretation. 
+The dataset contains an experiment between a diseased cell line and diseased cell lines treated with compound X. The difference in expression change between the two health status is computed as Fold change to log 2 (Log2FC) and the significance of each is computed in p-value.
+
 [Access Dataset Here](https://gist.githubusercontent.com/stephenturner/806e31fce55a8b7175af/raw/1a507c4c3f9f1baaa3a69187223ff3d3050628d4/results.txt)
 
 ***Task:***
@@ -74,25 +88,34 @@ This is a processed RNAseq dataset involving reading in quantitated gene express
 
 ***INSTRUCTION***
 
-NHANES is a program run by the CDC to assess the health and nutritional status of adults and children in the US. It combines survey questions and physical examinations, including medical and physiological measurements and laboratory tests, and examines a representative sample of about 5,000 people each year. The data is used to determine the prevalence of diseases and risk factors, establish national standards, and support epidemiology studies and health sciences research. This information helps to develop public health policy, design health programs and services, and expand the nation's health knowledge.
+NHANES is a program run by the CDC to assess the health and nutritional status of adults and children in the US. It combines survey questions and physical examinations, including medical and physiological measurements and laboratory tests, and examines a representative sample of about 5,000 people each year. 
+
+The data is used to determine the prevalence of diseases and risk factors, establish national standards, and support epidemiology studies and health sciences research. This information helps to develop public health policy, design health programs and services, and expand the nation's health knowledge.
 
 [Dataset here](https://raw.githubusercontent.com/HackBio-Internship/public_datasets/main/R/nhanes.csv)
+
 [Data Dictionary](https://raw.githubusercontent.com/HackBio-Internship/public_datasets/main/R/nhanes.csv)
 
 ***Tasks:***
 Process all NA (either by deleting or by converting to zero) {Hard :fire:}
+
 Visualize the distribution of BMI, Weight, Weight in pounds (weight *2.2) and Age with an histogram.
+
 What’s the mean 60-second pulse rate for all participants in the data?
 73.63382
+
 What’s the range of values for diastolic blood pressure in all participants? (Hint: see help for min(), max()).
 0-116
+
 What’s the variance and standard deviation for income among all participants?
 Visualize the relationship between weight and height ?
+
 Color the points by
-gender
-diabetes
+gender,
+diabetes,
 smoking status
+
 Conduct t-test between the following variables and make conclusions on the relationship between them based on P-Value
-Age and Gender
-BMI and Diabetes
+Age and Gender,
+BMI and Diabetes,
 Alcohol Year and Relationship Status
