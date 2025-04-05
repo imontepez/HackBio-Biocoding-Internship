@@ -1,4 +1,11 @@
 # Hackbio task 2.6 Transcriptomics
+#githublink: https://github.com/imontepez/HackBio-Biocoding-Internship/tree/main/stage_2
+#Threonine team_2:
+#Terry_ngala: https://github.com/Terryida
+#Tyler: https://github.com/tylermaire
+#Perex: https://github.com/imontepez
+#Gracious: https://github.com/Graciousisoah
+#Mahpara: https://github.com/mahpara97
 
 '''
  This is a processed RNAseq dataset involving reading in quantitated gene expression data from an RNA-seq experiment, exploring the data using base R functions and then interpretation. 
