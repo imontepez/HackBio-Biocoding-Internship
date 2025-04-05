@@ -56,3 +56,16 @@ Generate a frequency table for all the amino acids
 - Using the amino frequency table above, generate a barplot and pie chart to represent the frequency of the amino acids.
 - Briefly describe the amino acid with the highest impact on protein structure and function
 - What can you say about the structural property and functional property of amino acids with more than 100 occurences.
+----
+###### TASK 2.6: Transcriptomics
+
+***INSTRUCTION***
+
+This is a processed RNAseq dataset involving reading in quantitated gene expression data from an RNA-seq experiment, exploring the data using base R functions and then interpretation. The dataset contains an experiment between a diseased cell line and diseased cell lines treated with compound X. The difference in expression change between the two health status is computed as Fold change to log 2 (Log2FC) and the significance of each is computed in p-value.
+[Access Dataset Here](https://gist.githubusercontent.com/stephenturner/806e31fce55a8b7175af/raw/1a507c4c3f9f1baaa3a69187223ff3d3050628d4/results.txt)
+
+***Task:***
+- Generate a volcano plot. (Hint search for volcano plot online)
+- Determine the upregulated genes (Genes with Log2FC > 1 and pvalue < 0.01)
+- Determine the downregulated genes (Genes with Log2FC < -1 and pvalue < 0.01)
+- What are the functions of the top 5 upregulated genes and top 5 downregulated genes. (Use genecards)
