@@ -1,4 +1,13 @@
  #Hackbio task 2.7 Public Health
+#githublink: https://github.com/imontepez/HackBio-Biocoding-Internship/tree/main/stage_2
+# link to the linkedin profile:
+https://www.linkedin.com/in/peter-imonte-biomedical-reseacher-data-analyst/
+#Threonine team_2:
+#Terry_ngala: https://github.com/Terryida
+#Tyler: https://github.com/tylermaire
+#Perex: https://github.com/imontepez
+#Gracious: https://github.com/Graciousisoah
+#Mahpara: https://github.com/mahpara97
 
 '''
  NHANES is a program run by the CDC to assess the health and nutritional status of adults and children in the US. 
@@ -152,5 +161,3 @@ t.test(AlcoholYear ~ RelationshipStatus, data = t.testAAlcohol)
 
 # Since the p-value (p=3.388×10−8) is less than 0.05, we reject the null hypothesis and conclude that there is a statistically significant difference in yearly alcohol consumption between individuals who are in a committed relationship and those who are single.
 
-# https://github.com/Terryida/Hackbio-biocoding-internship/tree/main
-# https://www.linkedin.com/in/terry-ngala-784b60242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
