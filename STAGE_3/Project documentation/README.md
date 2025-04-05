@@ -3,7 +3,7 @@
 
 - What chemical properties determine if a small molecule will bind to a protein target?
   
-***[Study this data]***(https://github.com/HackBio-Internship/2025_project_collection/raw/refs/heads/main/Python/Dataset/drug_class_struct.txt)
+[***Study this data***](https://github.com/HackBio-Internship/2025_project_collection/raw/refs/heads/main/Python/Dataset/drug_class_struct.txt)
 
 It is a chemical descriptor matrix of over 10000 compounds
 Using the data above, pick any of the tasks below
