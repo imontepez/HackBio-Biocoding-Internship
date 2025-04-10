@@ -24,15 +24,15 @@ df = read.csv(df_link)
 head(df)
 
 '''
-We will split the data into 80% training and 20% testing.
-
+-We will split the data into 80% training and 20% testing.
 Why do we split the data?
 We need to train the model on one dataset and test it on unseen data.
 This prevents overfitting (when a model memorizes training data but fails on new data).
 80% training and 20% testing is a common rule.
 
 '''
-set.seed(42) #keeps the result reproducible 
+set.seed(42)            #keeps the result reproducible 
+
 train_index <- createDataPartition(df$Age, p = 0.8, list = FALSE)
 
 train_data <- df[train_index, ]
@@ -41,7 +41,7 @@ test_data <- df[-train_index, ]
 # Train the linear regression model
 lm_model <- train(Age ~ ., data = train_data,
                   method = "lm",
-                  trControl = trainControl(method = "cv", number = 5))  # 5-fold cross-validation
+                  trControl = trainControl(method = "cv", number = 5))     # 5-fold cross-validation
 
 # Print model summary
 summary(lm_model$finalModel)
