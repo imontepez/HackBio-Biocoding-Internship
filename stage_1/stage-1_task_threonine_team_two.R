@@ -37,16 +37,17 @@ codons<-list(c("GCT","GCC","GCA","GCG"),
                c("GTT","GTC","GTA","GTG"),
                c("TAA","TAG","TGA"))
   
-  #Treat each vector of codons "as is" using the built-in function I
+  #Treat each vector of codons "as is" using the built-in function "I"
   
   codon_df<-data.frame(codons= I(codons), amino_acids= I(amino_acids))
   
   # Split sequence into triple letters
   
   seq_vec<-character() # Create an empty character vector
-  for (i in seq(1,nchar(sequence),by=3)){ # Iterate over each character in the sequence
-    codon<-substr(sequence,i,min(i+2,nchar(sequence))) # Extract sub-strings of 3 from the sequence
-    seq_vec<-c(seq_vec,codon) #Append codon to the empty vector to create the codon sequence
+  
+  for (i in seq(1,nchar(sequence),by=3)){                  # Iterate over each character in the sequence
+    codon<-substr(sequence,i,min(i+2,nchar(sequence)))     # Extract sub-strings of 3 from the sequence
+    seq_vec<-c(seq_vec,codon)                              #Append codon to the empty vector to create the codon sequence
   }
   
   # Match the codons to the amino acids and create the amino acid sequence
@@ -54,8 +55,8 @@ codons<-list(c("GCT","GCC","GCA","GCG"),
   aa_seq<-""
   for (cdn in seq_vec) {
     for (i in 1:nrow(codon_df)) {
-      if (cdn %in% codon_df$codons[[i]]){ # double brackets to access the codon vector within the data frame
-        aa_seq<-paste0(aa_seq,codon_df$amino_acids[i]) # add the amino acid to the new character vector, aa_seq
+      if (cdn %in% codon_df$codons[[i]]){                     # double brackets to access the codon vector within the data frame
+        aa_seq<-paste0(aa_seq,codon_df$amino_acids[i])        # add the amino acid to the new character vector, aa_seq
         if (codon_df$amino_acids[[i]]=="*") {
           return(aa_seq)
         }
@@ -154,7 +155,7 @@ carrying_capacity_80<-function(initial_od,growth_rate){
   
   #where 0.8 is assumed to be the final_od and a constant
   time_for_capacity <- log((0.8 / (1 - 0.8)) / (initial_od / (1 - initial_od))) / growth_rate
-  return(paste("The time it takes to reach 80% of the carrying capacity is:", 
+  return(paste("The time it takes to reach 80% of the carrying capacity of 1 is:", 
                round(time_for_capacity, 2), "hours"))
 }
 
@@ -188,7 +189,7 @@ Hamming_distance <- function(Slackname, Twittername) {
   for (x in 1:length(String1)) {
     if (String1[x] != String2[x]){
       
-      Distance <- Distance + 1 # Add to the Hamming distance in case of a different character
+      Distance <- Distance + 1                    # Add to the Hamming distance in case of a different character
     }
   }
   
@@ -203,6 +204,7 @@ Hamming_distance("perexzzzz", "imontepez")
 #Gracious, Gracious_1
 #Mahpara, Mahpara_twitter
 #ngala_terry, Ty_Maire
+
 #github of all members of group    
 #https://github.com/mahpara97 
 #https://github.com/Terryida
