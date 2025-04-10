@@ -3,7 +3,7 @@
 ***
 ## **Introduction**
 
-  The Hackbio Biocoding Internship is an intensive 5-week program that focuses on learning coding and applying machine learning algorithms to life sciences. Participants are divided into teams of five, each named after different amino acids. My team, the second **"Threonine Team-2,"** consists of members represented by the codons **ACA, ACT, ACC, and ACG**. For the stage zero task, we were tasked with using R to organize and present details of our team members in a clear and logical format. This includes their ***first name, last name, Slack username, email, hobby, country, discipline, and preferred programming language***.
+  The Hackbio Biocoding Internship is an intensive 5-week program that focuses on learning coding and applying machine learning algorithms to life sciences. Participants are divided into teams of five, each named after different amino acids. My team, the second **"Threonine Team-2,"** consists of 5 members represented by the codons **ACA, ACT, ACC, and ACG**. For the stage zero task, we were tasked with using R to organize and present details of our team members in a clear and logical format. This includes their ***first name, last name, Slack username, email, hobby, country, discipline, and preferred programming language***.
   
 ***
 ### **METHOD**
